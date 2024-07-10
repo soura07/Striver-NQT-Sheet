@@ -3,20 +3,17 @@
 #include<vector>
 #include<algorithm>
 using namespace std;
-
-int sortArr(vector<int> arr){
+int sortArray(vector<int> &arr){
     sort(arr.begin(), arr.end());
     return arr[0];
-
-
 }
 int main()
 {
-    vector<int> arr1 = {2, 5, 1 , 3 , 0};
-    vector<int> arr2 = {8, 10, 5, 7, 9};
+    vector<int> arr1 = {98,123,75,126,902,61};
+    vector<int> arr2 = {98,123,75,126,902,42};
 
-    cout<<"Smallest Nummber is " << sortArr(arr1) << endl;
-    cout<<"Smallest Nummber is " << sortArr(arr2) << endl;
+    cout << "Smallest number is " << sortArray(arr1);
+    cout << endl;
+    cout << "Smallest number is " << sortArray(arr2);
 
-    return 0;
 }
